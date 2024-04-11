@@ -25,7 +25,7 @@ System.out.println();
     //     return ans;
     // }
     static void rotateWithoutExtraSpace(int[] arr,int k){
-        System.out.println("ARRAY ROTATE WITHOUT SPACE");
+        System.out.println("ARRAY ROTATE WITHOUT EXTRA SPACE");
         int step=k%arr.length;
         int i=arr.length-step,j=arr.length-1;
         while(i<j){
