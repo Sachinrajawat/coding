@@ -66,6 +66,8 @@ public class a_22recSum {
         return mat;
         // PrintArray(mat,r,c);
     }
+
+    // M-3
     static void rectangleSum3(int[][] mat,int r,int c,int l1,int r1,int l2,int r2){
         int[][] Row=prefixSum(mat, r, c);
         int[][] column=prefixSumColumn(Row, r, c);

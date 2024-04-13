@@ -19,6 +19,7 @@ public class a_17transpose {
         PrintArray(trans,c,r);
     }*/
     
+    //only for square matrix
     static void transposeInPlace(int[][] mat1,int r,int c){
         for (int i = 0; i < r; i++) {
             for (int j = i; j < c; j++) {
@@ -26,7 +27,6 @@ public class a_17transpose {
                 mat1[i][j]=mat1[j][i];
                 mat1[j][i]=temp;
             }
-            
         }
         // System.out.println("Transpose mat: ");
         //     PrintArray(mat1,c,r);
