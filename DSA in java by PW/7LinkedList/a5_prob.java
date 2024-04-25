@@ -31,6 +31,7 @@ public class a5_prob {
             Node temp=head;
             if(index==0){
                 head=temp.next;
+                return;
             }
             for(int i=0;i<index-1;i++){
                 temp=temp.next;
