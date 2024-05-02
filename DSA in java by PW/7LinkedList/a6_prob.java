@@ -18,7 +18,6 @@ public class a6_prob {
     }*/
     //M2
     public static Node nthNode(Node head,int n){
-        int size=0;
         Node slow=head;
         Node fast=head;
         

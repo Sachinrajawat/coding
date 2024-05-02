@@ -50,6 +50,9 @@ public class a7_arrayImplementation {
             if(idx==arr.length) return true;
             else return false;
         }
+        int capacity(){
+            return arr.length;
+        }
     }
 
     public static void main(String[] args) {

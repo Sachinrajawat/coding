@@ -16,12 +16,9 @@ public class a4_LinkedList {
         void add(int val) {
             Node temp = new Node(val);
             if (size == 0) {
-                // temp.next = head;
                 head = tail=temp;
-                // tailPre=temp;
             } else {
                 tail.next=temp;
-                // tailPre.next=temp;
                 tail=temp;
             }
             size++;
