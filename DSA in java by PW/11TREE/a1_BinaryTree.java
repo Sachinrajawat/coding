@@ -25,6 +25,14 @@ public class a1_BinaryTree {
         System.out.print(root.val+" ");
         preorder(root.right);
     }
+    static void postorder(Node root){ //Left Right Root //time O(n) space O(n)
+        if(root==null){
+            return;
+        }
+        preorder(root.left);
+        preorder(root.right);
+        System.out.print(root.val+" ");
+    }
     
     public static void main(String[] args) {
         Node root=new Node(1);
@@ -39,5 +47,9 @@ public class a1_BinaryTree {
         System.out.print("InOrder: ");
         inorder(root);
         System.out.println();
+        System.out.print("PostOrder: ");
+        postorder(root);
+        System.out.println();
+        
     } 
 }

@@ -11,7 +11,6 @@ public class a_7rorate {
         }
         for (int i = 0; i < arr.length-step; i++) {
             System.out.print(arr[i]+" ");
-            
         }
 System.out.println();
     }

@@ -3,12 +3,11 @@
 import java.util.ArrayList;
 import java.util.Stack;
 
-import a4_Linkedlist.LinkedList;
 
 public class a1_ListInterface {
     public static void main(String[] args) {
         ArrayList<Integer> l=new ArrayList<>();
-        LinkedList<Integer> l=new LinkedList<>();
+        // LinkedList<Integer> l=new LinkedList<>();
         Stack<Integer> s=new Stack<>();
         l.add(1);
         l.add(2);

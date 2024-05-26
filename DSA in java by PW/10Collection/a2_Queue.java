@@ -6,8 +6,8 @@ public class a2_Queue {
     static void QueueExam(){
         LinkedList<Integer> q=new LinkedList<>();
         q.add(1);
-        q.add(1);
-        q.add(1);
+        q.add(2);
+        q.add(3);
         System.out.println(q);
     }
     static void PriorityQueue(){

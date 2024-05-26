@@ -5,7 +5,6 @@ public class a12_nextGreater {
         // Stack<Integer> s=new Stack<>();
         int[] res=new int[arr.length];
         for(int i=0;i<arr.length;i++){
-            
             res[i]=-1;
             for(int j=i+1;j<arr.length;j++){
                 if(arr[i]<arr[j]){
@@ -14,7 +13,6 @@ public class a12_nextGreater {
                     break;
                 }
             }
-            
         }
         for(int i=0;i<arr.length;i++){
             System.out.print(res[i]+" ");

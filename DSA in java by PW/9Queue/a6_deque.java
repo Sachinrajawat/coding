@@ -23,8 +23,7 @@ public class a6_deque {
         System.out.println(dq);
         // dq.removeAll(dq);
         // System.out.println(dq);
-        dq.removeFirstOccurrence(1);
+        dq.removeFirstOccurrence(2);
         System.out.println(dq);
-        
     }
 }

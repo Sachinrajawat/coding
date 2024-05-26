@@ -77,11 +77,17 @@ public class a7_DoublyLL {
     }
 
     public static Node deleteAtHead(Node head){
+        head=head.next;
+        head.prev=null;
+        return head;
+    }
+    public static Node deleteAtTail(Node head){
         // Node temp=head;
         head=head.next;
         head.prev=null;
         return head;
     }
+    
     public static void main(String[] args) {
         Node a=new Node(4);
         Node b=new Node(18);
