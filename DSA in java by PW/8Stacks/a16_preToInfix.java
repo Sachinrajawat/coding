@@ -1,5 +1,5 @@
 import java.util.Stack;
-
+//prefix to infix
 public class a16_preToInfix {
     public static void main(String[] args) {
         String s="-9/*+5346";

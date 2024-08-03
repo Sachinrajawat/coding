@@ -18,7 +18,6 @@ public class a7_reverseFirstK {
             st.push(q.remove());
         }
         while (st.size()>0) {
-            // q.ad(st.pop());
             q.add(st.pop());
         }
         int i=0;

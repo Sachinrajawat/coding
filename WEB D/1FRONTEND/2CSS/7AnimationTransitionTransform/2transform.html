@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transform</title>
+    <style>
+        .box{
+            height: 50px;
+            width: 50px;
+            border: 2px solid black;
+            border-radius: 5px;
+            background-color: plum;
+            position: relative;
+            top: 50px;
+            left: 50px;
+            /* transform: rotate(45deg); */
+            transition: all 1s ease-in-out;
+        }
+        .box:hover{
+            /* transform: rotate(45deg); */
+            /* transform: rotatex(45deg); */
+            /* transform: rotatey(48deg); */
+            /* transform: scale(2); */
+            /* transform: translate(50px); */
+            /* transform: translate(50px, 50px); */
+            transform: skew(-45deg);
+        }
+    </style>
+</head>
+<body>
+    <div class="box">Rotate</div>
+</body>
+</html>

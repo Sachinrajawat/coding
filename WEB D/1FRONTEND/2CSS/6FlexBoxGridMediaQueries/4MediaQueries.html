@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Queries</title>
+    <style>
+        .box{
+            padding: 5px;
+            height: 100px;
+            width: 100px;
+            background-color: goldenrod;
+        }
+        /* @media screen and (width: 300px) {
+            .box{
+                background-color: brown;
+            }
+        } */
+        /* @media screen and (max-width: 400px) {
+            .box{
+                background-color: brown;
+            }
+        } */
+        @media screen and (max-width: 300px) and (min-width: 200px){
+            .box{
+                border-radius: 50%;
+            }
+        }
+        
+    </style>
+</head>
+<body>
+    <h1 id="container">Media Queries</h1>
+    <div class="box">Flex Item 1</div>
+</body>
+</html>

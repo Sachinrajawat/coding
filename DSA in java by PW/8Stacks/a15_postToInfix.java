@@ -1,5 +1,5 @@
 import java.util.Stack;
-
+//postfix to infix
 public class a15_postToInfix {
     public static void main(String[] args) {
         String s="953+4*6/-";
