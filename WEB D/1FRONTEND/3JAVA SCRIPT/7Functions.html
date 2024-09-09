@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Functions</title>
+</head>
+<body>
+    <script>
+        let age=21;
+        function printAge(){
+            console.log(`Your age is ${age}`);
+        }
+        printAge();
+        age = 79;
+        printAge();
+        age =1;
+        printAge();
+
+        function sum(a,b){
+            let sum = a+b;
+            return sum;
+        }
+        let num=sum(41,5);
+        console.log(num);
+
+        function greeting(name = 'Pyare'){ //default parameter
+            console.log(`Namaste ${name} uncle`)
+        }
+        greeting();
+        greeting('sa');
+    </script>
+</body>
+</html>
