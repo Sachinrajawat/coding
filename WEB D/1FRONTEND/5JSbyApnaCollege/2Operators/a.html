@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Name and Age Form</title>
+</head>
+<body>
+    <h1>Name and Age Form</h1>
+    <form action="form.php" method="GET">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+        <br><br>
+        
+        <label for="age">Age:</label>
+        <input type="number" id="age" name="age" required min="1">
+        <br><br>
+        
+        <input type="submit" value="Submit">
+    </form>
+
+    <?php
+    if ($_SERVER["REQUEST_METHOD"] == "GET" && !empty($_GET['name']) && !empty($_GET['age'])) {
+        $name = htmlspecialchars($_GET['name']);
+        $age = intval($_GET['age']);
+        
+        // Validation
+        if (strlen($name) > 0 && $age > 0) {
+            echo "<h2>Submitted Information:</h2>";
+            echo "Name: " . $name . "<br>";
+            echo "Age: " . $age;
+        } else {
+            echo "<p>Please enter valid values.</p>";
+        }
+    }
+    ?>
+</body>
+</html>
