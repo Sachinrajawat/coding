@@ -1,0 +1,12 @@
+h1 {
+    color: blue;
+    /* text-decoration: line-through; */
+    background-color: yellow;
+}
+body{
+    background-color: rgb(28, 27, 16);
+}
+button{
+    color: rgb(14, 14, 16);
+    background-color: blueviolet;
+}
